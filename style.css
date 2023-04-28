@@ -2,10 +2,43 @@
 .province {
     position: absolute;
     transition: all 0.1s ease-in-out;
-    filter: grayscale(1)
+    /* filter: brightness(0.3) invert(); */
 }
 
-.province:hover {
-    filter: brightness(1.1);
-
+.status1:hover {
+    filter: brightness(0.2) invert();
 }
+
+
+.status1 {
+    filter: brightness(0.5) invert();
+}
+
+
+.status2:hover {
+    filter: brightness(0.8);
+}
+
+.status0 {
+    filter: brightness(0);
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 9999;
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .tooltip.visible {
+    opacity: 1;
+  }
+  
