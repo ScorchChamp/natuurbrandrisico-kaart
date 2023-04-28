@@ -1,0 +1,11 @@
+
+.province {
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+    filter: grayscale(1)
+}
+
+.province:hover {
+    filter: brightness(1.1);
+
+}
